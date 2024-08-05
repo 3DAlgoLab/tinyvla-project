@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Pun Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .pun {
+            font-size: 24px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pun" id="pun">Click the button to see a pun!</div>
+    <button onclick="displayRandomPun()">Get a Pun</button>
+
+    <script>
+        const puns = [
+            "I'm reading a book on anti-gravity. It's impossible to put down!",
+            "Did you hear about the mathematician who's afraid of negative numbers? He will stop at nothing to avoid them.",
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+            "Parallel lines have so much in common. It's a shame they'll never meet.",
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "What do you call fake spaghetti? An impasta!",
+            "How does a penguin build its house? Igloos it together.",
+            "What do you call cheese that isn't yours? Nacho cheese.",
+            "Why couldn't the bicycle stand up by itself? It was two tired.",
+            "What did the grape do when he got stepped on? Nothing but let out a little wine!",
+            "I would avoid the sushi if I was you. It's a little fishy.",
+            "Want to hear a joke about construction? I'm still working on it.",
+            "Why don't some couples go to the gym? Because some relationships don't work out.",
+            "I used to play piano by ear, but now I use my hands.",
+            "I'm on a seafood diet. I see food and I eat it.",
+            "Why did the coffee file a police report? It got mugged.",
+            "How does a penguin build its house? Igloos it together.",
+            "I told my computer I needed a break, and now it won't stop sending me Kit-Kats.",
+            "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "I don't trust stairs because they're always up to something.",
+            "Why did the tomato turn red? Because it saw the salad dressing!",
+            "What do you call a factory that makes good products? A satisfactory.",
+            "Why did the math book look sad? Because it had too many problems.",
+            "Why don't oysters donate to charity? Because they are shellfish.",
+            "What do you call a bear with no teeth? A gummy bear.",
+            "Why did the scarecrow become a successful neurosurgeon? He was outstanding in his field.",
+            "What do you call a fish wearing a crown? A kingfish.",
+            "Why did the chicken join a band? Because it had the drumsticks.",
+            "Why don't some couples go to the gym? Because some relationships don't work out.",
+            "What do you call a snowman with a six-pack? An abdominal snowman.",
+            "Why did the bicycle fall over? Because it was two-tired.",
+            "What do you call a pile of cats? A meowtain.",
+            "Why did the computer go to the doctor? Because it had a virus.",
+            "Why did the scarecrow become a successful neurosurgeon? He was outstanding in his field.",
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+            "Why don't eggs tell jokes? They'd crack each other up.",
+            "What do you call a factory that makes good products? A satisfactory.",
+            "Why did the math book look sad? Because it had too many problems.",
+            "Why don't oysters donate to charity? Because they are shellfish.",
+            "What do you call a bear with no teeth? A gummy bear.",
+            "Why did the scarecrow become a successful neurosurgeon? He was outstanding in his field.",
+            "What do you call a fish wearing a crown? A kingfish.",
+            "Why did the chicken join a band? Because it had the drumsticks."
+        ];
+
+        function displayRandomPun() {
+            const randomIndex = Math.floor(Math.random() * puns.length);
+            document.getElementById('pun').innerText = puns[randomIndex];
+        }
+    </script>
+</body>
+
+</html>
